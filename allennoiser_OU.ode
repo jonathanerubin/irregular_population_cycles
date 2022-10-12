@@ -1,0 +1,11 @@
+x'=P*x*(1-x/K)-a*x*y/(x+H)+eps*f
+y'=a*b*x*y/(x+H)-(m)*y+eps*g
+r'=gamma*(re-r)+sigma*w
+P=exp(r)
+
+wiener w
+
+par re=0.3,K=2.0,H=1.0,a=2.0,eps=0,f=1.0,b=0.5,m=0.2,g=1.0
+p sigma=0,gamma=1.0
+@ dt=0.01,meth=euler,xp=x,yp=y,xlo=0,ylo=0,xhi=2,yhi=2,bound=100000,maxstor=5000000
+done
